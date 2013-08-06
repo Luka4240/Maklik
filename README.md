@@ -1,0 +1,4 @@
+Maklik
+======
+
+Lightweight Blogging Platform
