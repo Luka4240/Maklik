@@ -4,4 +4,3 @@ So in theory, this will become a nice and lightweight Blogging tool using Markdo
 
 Hope you like
 
-====

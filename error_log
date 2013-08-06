@@ -1,0 +1,9 @@
+[06-Aug-2013 13:33:28 UTC] PHP Warning:  require(vendor/autoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/luka4240/public_html/blog/index.php on line 5
+[06-Aug-2013 13:33:28 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/luka4240/public_html/blog/index.php on line 5
+[06-Aug-2013 14:40:01 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:40:03 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:40:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:40:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:40:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:41:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50
+[06-Aug-2013 14:41:25 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/luka4240/public_html/blog/app/views/layout.html.php on line 50

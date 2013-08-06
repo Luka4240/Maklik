@@ -12,11 +12,14 @@
 
 	<link href="<?php echo site_url() ?>assets/css/style.css" rel="stylesheet" />
     <link href="http://lukehoward.me.uk/dev/stylesheets/style.css" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic-ext" rel="stylesheet" />
+    <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
+    <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<!-- HTML5Shiv.js & Respond.js -->
+    <!--[if lte IE 8]>
+        <script type="text/javscript" src="jquery/html5shiv.js"></script>
+        <script type="text/javscript" src="jquery/respond.js"></script>
+    <![endif]-->
 	
 </head>
 <body>
@@ -40,11 +43,36 @@
 	
     <div class="row">
         <div class="two-thirds column">
+            
+            
+            <?php echo content(); ?>
+            
+            <?php foreach($posts as $p):?>
+                <div class="post">
+                    <h2><a href="<?php echo $p->url?>"><?php echo $p->title ?></a></h2>
+                    <div class="date"><?php echo date('d F Y', $p->date)?></div>
+                   
+		         <?php 
+                    $text = $p->body;
+                    $excerpt = explode("</p>", $text);
+                    echo $excerpt[0],'</p>';
+                   ?>
+                    <a class="mooi-button mooi-button-primary" href="<?php echo $p->url ?>">Read More</a>
+                </div>
+                   <?php endforeach;?>
+                </div>
+            
         
-        <?php echo content() ?>
+        
+        <div class="one-third column">
+        <ul class="blog-post-list">
+            <?php foreach($posts as $p):?>
+            <li><a href="<?php echo $p->url?>"><?php echo $p->title ?></a></li>
+            <?php endforeach;?>
+        </ul>
         
         </div>
-    
+        
     </div>
     
     
