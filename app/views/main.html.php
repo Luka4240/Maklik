@@ -1,5 +1,5 @@
 <?php foreach($posts as $p):?>
-	<div class="post">
+	<div class="post clearfix">
 		<h2><a href="<?php echo $p->url?>"><?php echo $p->title ?></a></h2>
 
 		<div class="date"><?php echo date('d F Y', $p->date)?></div>
@@ -10,7 +10,7 @@
         echo $excerpt[0],'</p>';
         ?>
         
-         <a class="mooi-button mooi-button-primary" href="<?php echo $p->url?>">Read More ></a>
+         <a class="mooi-button mooi-button-primary  blog-button" href="<?php echo $p->url?>">Read More ></a>
 
 	</div>
 <?php endforeach;?>

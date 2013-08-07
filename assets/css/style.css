@@ -107,7 +107,7 @@ h1 a, h2 a{
 }
 
 .post{
-	padding: 50px 0 15px 0;
+	padding: 10px 0 15px 0;
 	border-bottom: 1px solid #dfdfdf;
 }
 
@@ -115,7 +115,7 @@ h1 a, h2 a{
 	font: bold 12px 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	color: #a7a7a7;
-	margin: 24px 0 30px 20px;
+	margin: 10px 0 10px 20px;
 	position: relative;
 }
 
@@ -305,3 +305,9 @@ aside p.author{
 		width: 90%;
 	}
 }
+
+                                
+                                
+
+                                
+                                

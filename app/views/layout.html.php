@@ -11,7 +11,7 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php echo config('blog.title')?>  Feed" href="<?php echo site_url()?>rss" />
 
 	<link href="<?php echo site_url() ?>assets/css/style.css" rel="stylesheet" />
-    <link href="http://lukehoward.me.uk/dev/stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link href="http://lukehoward.me.uk/stylesheets/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
     <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 
@@ -26,15 +26,15 @@
     <header class="full-row page-header">
     <div class="row">
         <div class="sixteen columns header">
-            <img class="logo" src="http://lukehoward.me.uk/dev/images/logo.png" alt="Luke Howard" width="300" height="80" />
+            <img class="logo" src="http://lukehoward.me.uk/images/logo.png" alt="Luke Howard" width="300" height="80" />
             <nav>
                 <ul class="mooi-menu-horizontal  mooi-menu-right">
-                    <li><a href="#">Home</a></li>    
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="http://lukehoward.me.uk">Home</a></li>    
+                    <li><a href="http://lukehoward.me.uk/about">About</a></li>
+                    <li><a href="http://lukehoward.me.uk/work">Work</a></li>
+                    <li><a href="http://lukehoward.me.uk/projects">Projects</a></li>
+                    <li><a href="http://lukehoward.me.uk/blog">Blog</a></li>
+                    <li><a href="http://lukehoward.me.uk/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,14 +42,15 @@
 </header> 
 	
     <div class="row">
-        <div class="two-thirds column">
+        <div class="two-thirds column blog-content">
                     
             
             <?php echo content(); ?>
                     
         </div>
         
-        <div class="one-third column">
+        <div class="one-third column blog-sidebar">
+            <h4>Recent Posts</h4>
             <?php foreach($posts as $p):?> 
         <ul class="blog-post-list">
             
@@ -69,12 +70,16 @@
     
     
 <footer class="row">
-    <div class="sixteen columns">
-    <p>&copy; Copyright 2013. Luke Howard.</p>
-    </div>    
+    <div class="sixteen columns footer">
+        
+    </div>
+
+    <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
+    <div class="four columns"><p>&nbsp;</p></div>
+    <div class="four columns"><p>&nbsp;</p></div>
+    <div class="four columns"><p>Website built by <a href="http://www.lukehoward.me.uk/about.php">Me</a> using <a href="http://www.lukehoward.me.uk/mooi">Mooi</a>.</p></div>
     
-</footer>    
-    
+</footer> 
     
 </body>
 </html>

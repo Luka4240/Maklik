@@ -12,6 +12,7 @@ require 'app/includes/functions.php';
 // Load the configuration file
 config('source', 'app/config.ini');
 
+
 // The front page of the blog.
 // This will match the root url
 get('/index', function () {
