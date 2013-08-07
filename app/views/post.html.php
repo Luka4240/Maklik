@@ -5,6 +5,5 @@
 	<div class="date"><?php echo date('d F Y', $p->date)?></div>
 
 	<?php echo $p->body?>
-
+    
 </div>
-

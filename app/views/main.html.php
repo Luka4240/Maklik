@@ -4,7 +4,13 @@
 
 		<div class="date"><?php echo date('d F Y', $p->date)?></div>
 
-		<?php echo $p->body?>
+		<?php 
+        $text = $p->body;
+        $excerpt = explode("</p>", $text);
+        echo $excerpt[0],'</p>';
+        ?>
+        
+         <a class="mooi-button mooi-button-primary" href="<?php echo $p->url?>">Read More ></a>
 
 	</div>
 <?php endforeach;?>

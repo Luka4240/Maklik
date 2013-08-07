@@ -43,33 +43,25 @@
 	
     <div class="row">
         <div class="two-thirds column">
-            
+                    
             
             <?php echo content(); ?>
-            
-            <?php foreach($posts as $p):?>
-                <div class="post">
-                    <h2><a href="<?php echo $p->url?>"><?php echo $p->title ?></a></h2>
-                    <div class="date"><?php echo date('d F Y', $p->date)?></div>
-                   
-		         <?php 
-                    $text = $p->body;
-                    $excerpt = explode("</p>", $text);
-                    echo $excerpt[0],'</p>';
-                   ?>
-                    <a class="mooi-button mooi-button-primary" href="<?php echo $p->url ?>">Read More</a>
-                </div>
-                   <?php endforeach;?>
-                </div>
-            
-        
+                    
+        </div>
         
         <div class="one-third column">
+            <?php foreach($posts as $p):?> 
         <ul class="blog-post-list">
-            <?php foreach($posts as $p):?>
+            
+           
+	       
             <li><a href="<?php echo $p->url?>"><?php echo $p->title ?></a></li>
-            <?php endforeach;?>
-        </ul>
+
+                </ul>
+
+<?php endforeach;?>
+            
+        
         
         </div>
         

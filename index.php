@@ -34,8 +34,9 @@ get('/index', function () {
 });
 
 // The post page
-get('/:year/:month/:name',function($year, $month, $name){
 
+get('/:year/:month/:name',function($year, $month, $name){
+    $posts = get_posts($page);
 	$post = find_post($year, $month, $name);
 
 	if(!$post){
@@ -44,7 +45,9 @@ get('/:year/:month/:name',function($year, $month, $name){
 
 	render('post',array(
 		'title' => $post->title .' ⋅ ' . config('blog.title'),
-		'p' => $post
+		'p' => $post,
+        'page' => $page,
+        'posts' => $posts
 	));
 });
 
